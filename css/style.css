@@ -619,8 +619,7 @@ body {
 }
 
 .adress-map,
-.footer-contacts,
-.mail-btn {
+.footer-contacts {
   font-size: 14px;
   line-height: 1.7143;
   letter-spacing: 0.03em;
@@ -675,14 +674,23 @@ body {
   fill: (--logo-bgr-color);
 }
 
+.foot-form {
+  display: flex;
+}
+
 .mail-btn {
-  display: inline-block;
+  width: 358px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--footer-contact);
   padding: 15px;
-  padding-right: 295px;
   margin-right: 12px;
 
-  border: 1px solid var(--footer-contact);
+  background-color: var(--bgr-footer);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .footflex-elem .btn::after {
   content: "";
@@ -735,6 +743,9 @@ body {
 }
 
 .btn-modal {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -745,4 +756,78 @@ body {
   background: var(--logo-bgr-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+}
+
+.register-form {
+  padding: 40px;
+}
+
+.register-form h3 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  margin-bottom: 30px;
+
+  color: var(--secondary-color);
+}
+.form-field {
+  position: relative;
+  margin-bottom: 28px;
+  
+}
+.form-field .form-input, .form-field .form-cominp {
+  width: 100%;
+  
+  padding: 12px;
+  padding-left: 42px;
+  
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+
+  font-size: 14px;
+  line-height: 1.1428;
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+
+  cursor: pointer;
+}
+
+.form-field .form-cominp {
+  padding-left: 19px;
+}
+
+.form-comlab {
+  position: absolute;
+  top: 12px;
+  left: 19px;
+
+  font-size: 14px;
+  line-height: 1.71428;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+.form-checklab a {
+  color: var(--weblog-btn-link);
+  text-decoration: underline;
+}
+
+.btn-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
