@@ -330,18 +330,28 @@
         <h3>Оставьте свои данные, мы вам перезвоним</h3>
         <div class="form-field">
           
-          <input class="form-input" type="text" name="user-name" id="name">
+          <input class="form-input" type="text" name="user-name" id="name" placeholder=" ">
           <label class="form-label" for="name">Имя</label>
+          <svg class="icon" width="18px" height="18px">
+            <use href="./images/sprite.svg#icon-person-form"></use>
+          </svg>
+          
         </div>
         <div class="form-field">
           
-          <input class="form-input" type="tel" name="tel" id="tel">
+          <input class="form-input" type="tel" name="tel" id="tel" placeholder=" ">
           <label class="form-label" for="tel">Телефон</label>
+          <svg class="icon" width="18px" height="18px">
+            <use href="./images/sprite.svg#icon-phone-form"></use>
+          </svg>
         </div>
         <div class="form-field">
           
-          <input class="form-input" type="email" name="mail" id="mail">
+          <input class="form-input" type="email" name="mail" id="mail" placeholder=" ">
           <label class="form-label" for="mail">Почта</label>
+          <svg class="icon" width="18px" height="18px">
+            <use href="./images/sprite.svg#icon-email-form"></use>
+          </svg>
         </div>
         <div class="form-field">
           
@@ -350,7 +360,7 @@
         </div>
         <div class="form-check">
           <label class="form-checklab">
-           <input class="form-checkinp" type="checkbox" name="agree" /> 
+           <input hidden class="form-checkinp" type="checkbox" name="agree" /> 
            Соглашаюсь с рассылкой и принимаю 
            <a href="#">Условия договора</a>
           </label>
