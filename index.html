@@ -318,6 +318,7 @@
       </section>
     </div>
   </footer>
+  
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="btn-modal" data-modal-close>
@@ -353,16 +354,23 @@
             <use href="./images/sprite.svg#icon-email-form"></use>
           </svg>
         </div>
-        <div class="form-field">
+        <div class="form-comment">
           
-          <textarea class="form-cominp" name="comments" id="comments" rows="6"></textarea>
+          <textarea class="form-cominp" name="comments" id="comments" rows="6" placeholder=" "></textarea>
           <label class="form-comlab" for="comments">Коментарий</label>
         </div>
         <div class="form-check">
           <label class="form-checklab">
-           <input hidden class="form-checkinp" type="checkbox" name="agree" /> 
+           <input hidden class="form-checkinp" type="checkbox" name="agree"/>
+           <span class="icon-check">
+            <svg class="icon" width="16px" height="15px">
+             <use href="./images/sprite.svg#icon-icon-check"></use>
+            </svg>
+          </span>
            Соглашаюсь с рассылкой и принимаю 
            <a href="#">Условия договора</a>
+          
+            
           </label>
         </div>
         <div class="btn-flex">
